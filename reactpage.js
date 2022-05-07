@@ -1,44 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./index.css";
+import Footer from "./Footer.js";
+import MainContent from "./MainContent.js";
+import Header from "./Header.js";
 
-function Header() {
-  return (
-    <header>
-      <nav className="nav">
-        <img src="./react-logo.png" className="nav-logo" />
-        <ul className="nav-items">
-          <li>Pricing</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </header>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="footer">
-      <small>© 2022 Browning development. All rights reserved.</small>
-    </footer>
-  );
-}
-
-function MainContent() {
-  return (
-    <div>
-      <h1>Reasons I'm excited to learn React</h1>
-      <ol>
-        <li>
-          It's a popular library, so I'll be able to fit in with the cool kids!
-        </li>
-        <li>I'm more likely to get a job as a developer if I know React</li>
-      </ol>
-    </div>
-  );
-}
-
-function Page() {
+function App() {
   return (
     <div className="finish">
       <Header />
@@ -48,4 +15,4 @@ function Page() {
   );
 }
 
-ReactDOM.render(<Page />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
